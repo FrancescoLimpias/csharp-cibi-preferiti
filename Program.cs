@@ -22,11 +22,11 @@ for (int i = 0; i < favoriteDishes.Length; i++)
         Console.Write(" (MY FAVORITE!)");
     else if (i == favoriteDishes.Length - 1)
         Console.Write(" (THE'LESS FAVORITE')");
-    else if (false)
-    {
-
-    }
-
+    else if (
+        favoriteDishes.Length % 2 == 0 /* oddity check*/
+        && i + 1 == favoriteDishes.Length / 2 /* even */
+        || i == favoriteDishes.Length / 2) /* odd and even */
+        Console.Write(" - HALF");
 
     Console.WriteLine();
 }
