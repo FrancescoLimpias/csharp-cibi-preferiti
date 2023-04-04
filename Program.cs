@@ -15,7 +15,6 @@ String[] favoriteDishes =
     "Chocolate",
     "Ice Cream",
     "Pancakes",
-    "Rice & chicken",
     "Nachos & Guacamole"
 };
 
