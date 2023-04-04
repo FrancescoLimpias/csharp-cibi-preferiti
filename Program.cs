@@ -13,7 +13,10 @@ String[] favoriteDishes =
     "Fruit Tart",
     "Spicy chicken wings",
     "Chocolate",
-    //"Ice Cream",
+    "Ice Cream",
+    "Pancakes",
+    "Rice & chicken",
+    "Nachos & Guacamole"
 };
 
 //Main
@@ -70,15 +73,3 @@ Console.WriteLine();
 
 //Footer
 Console.WriteLine("Thank you!");
-
-
-
-//if (i == 0)
-//    Console.Write(" (MY FAVORITE!)");
-//else if (i == favoriteDishes.Length - 1)
-//    Console.Write(" (THE'LESS FAVORITE')");
-//else if (
-//    favoriteDishes.Length % 2 == 0 /* oddity check*/
-//    && i + 1 == favoriteDishes.Length / 2 /* even */
-//    || i == favoriteDishes.Length / 2) /* odd and even */
-//    Console.Write(" - HALF");
