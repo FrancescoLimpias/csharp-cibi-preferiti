@@ -4,7 +4,7 @@
 Console.WriteLine("Welcome!");
 Console.WriteLine();
 
-//Array Declaration
+//Favorite dishes declaration
 String[] favoriteDishes =
 {
     "Pizza",
@@ -33,9 +33,18 @@ for (int i = 0; i < favoriteDishes.Length; i++)
     else if (i == favoriteDishes.Length - 1)
         role = "BOTTOM";
     else if (
-        favoriteDishes.Length % 2 == 0 /* oddity check*/
-        && i + 1 == favoriteDishes.Length / 2 /* even */
-        || i == favoriteDishes.Length / 2) /* odd and even */
+
+        /* OLD expression (based on oddity check switch)
+        favoriteDishes.Length % 2 == 0 // oddity check
+        && i + 1 == favoriteDishes.Length / 2 // even
+        || i == favoriteDishes.Length / 2) // odd and even
+        */
+
+        // NEW expression (based on decimal ceiling)
+        i == favoriteDishes.Length / 2
+        || i + 1 == Math.Ceiling((decimal)favoriteDishes.Length / 2)
+
+        )
         role = "MID";
 
     //Bullet print
