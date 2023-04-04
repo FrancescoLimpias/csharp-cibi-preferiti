@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Welcome!");
+Console.WriteLine();
 
 String[] favoriteDishes =
 {
@@ -11,3 +12,12 @@ String[] favoriteDishes =
     "Chocolate",
     "Ice Cream",
 };
+
+Console.WriteLine("These are my favorite dishes:");
+for (int i = 0; i < favoriteDishes.Length; i++)
+{
+    Console.WriteLine($" - {favoriteDishes[i]}");
+}
+Console.WriteLine();
+
+Console.WriteLine("Thank you!");
