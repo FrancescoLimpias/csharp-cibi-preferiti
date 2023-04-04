@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//FAVORITE FOODS
+//Project by Francesco Limpias
 
 //Header
 Console.WriteLine("Welcome!");
@@ -34,11 +35,11 @@ for (int i = 0; i < favoriteDishes.Length; i++)
         role = "BOTTOM";
     else if (
 
-        /* OLD expression (based on oddity check switch)
-        favoriteDishes.Length % 2 == 0 // oddity check
-        && i + 1 == favoriteDishes.Length / 2 // even
-        || i == favoriteDishes.Length / 2) // odd and even
-        */
+        //OLD expression (based on oddity check switch)
+        //favoriteDishes.Length % 2 == 0 // oddity check
+        //&& i + 1 == favoriteDishes.Length / 2 // even
+        //|| i == favoriteDishes.Length / 2) // odd and even
+        
 
         // NEW expression (based on decimal ceiling)
         i == favoriteDishes.Length / 2
