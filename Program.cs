@@ -13,10 +13,10 @@ String[] favoriteDishes =
     "Ice Cream",
 };
 
-Console.WriteLine("These are my favorite dishes:");
+Console.WriteLine($"These are my {favoriteDishes.Length} favorite dishes:");
 for (int i = 0; i < favoriteDishes.Length; i++)
 {
-    Console.WriteLine($" - {favoriteDishes[i]}");
+    Console.WriteLine($" {i+1}° - {favoriteDishes[i]}");
 }
 Console.WriteLine();
 
